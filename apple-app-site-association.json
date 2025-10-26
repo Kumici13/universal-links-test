@@ -1,0 +1,32 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [
+                    "LNP3ZYDVL7.com.ooxlimited.snarelair"
+                ],
+                "components": [
+                    {
+                        "#": "noul",
+                        "exclude": true,
+                        "comment": "Matches any URL with a fragment that equals 'noudl' and instructs the system not to open it as a universal link."
+                    },
+                    {
+                        "/": "/api/*",
+                        "exclude": true,
+                        "comment": "Matches any URL with a path that starts with /api/ and instructs the system not to open it as a universal link."
+                    },
+                    {
+                        "/": "/.well-known/*",
+                        "exclude": true,
+                        "comment": "Matches any URL with a path that starts with /.well-known/ and instructs the system not to open it as a universal link."
+                    },
+                    {
+                        "/": "*",
+                        "comment": "Matches every other URL as a universal link."
+                    }
+                ]
+            }
+        ]
+    }
+}
